@@ -1,5 +1,5 @@
 require "cinch"
-require_relative "./response"
+require_relative "./plugins/response"
 
 bot = Cinch::Bot.new do
   configure do |c|
