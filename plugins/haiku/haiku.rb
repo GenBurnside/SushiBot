@@ -6,7 +6,7 @@ class Haiku
 
   def initialize(*args)
     super
-    @@file ||= File.read("plugins/haiku.json")
+    @@file ||= File.read("plugins/haiku/haiku.json")
     @@list ||= JSON.parse(@@file)
   end
 

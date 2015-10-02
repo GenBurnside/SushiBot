@@ -1,6 +1,6 @@
 require "cinch"
-require_relative "./plugins/response"
-require_relative "./plugins/haiku"
+require_relative "./plugins/response/response"
+require_relative "./plugins/haiku/haiku"
 
 bot = Cinch::Bot.new do
   configure do |c|
