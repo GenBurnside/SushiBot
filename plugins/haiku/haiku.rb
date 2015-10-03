@@ -21,6 +21,6 @@ class Haiku
       m.reply t
     end
 
-    m.reply "— #{selected["author"]}"
+    m.reply "—#{selected["author"]}"
   end
 end
