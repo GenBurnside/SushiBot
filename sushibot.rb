@@ -9,6 +9,14 @@ bot = Cinch::Bot.new do
     c.server = "sushichat.no-ip.org"
     c.channels = ["#losalamos"]
     c.plugins.plugins = [Response, Haiku, Sushi]
+
+    on :connect do
+      nickserv = "NickServ"
+      password = "supersecretpassword"
+
+      command = "identify #{password}"
+      User(nickserv).send(command)
+    end
   end
 end
 
